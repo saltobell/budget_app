@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C17A74232374980F00D5A6E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A74222374980F00D5A6E8 /* HomeView.swift */; };
+		C17A74252375138F00D5A6E8 /* Budgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A74242375138F00D5A6E8 /* Budgets.swift */; };
+		C17A74272375150700D5A6E8 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A74262375150600D5A6E8 /* Categories.swift */; };
 		C1B17E682367C238001C3514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B17E672367C238001C3514 /* AppDelegate.swift */; };
 		C1B17E6A2367C238001C3514 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B17E692367C238001C3514 /* SceneDelegate.swift */; };
 		C1B17E6C2367C238001C3514 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B17E6B2367C238001C3514 /* ContentView.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C17A74222374980F00D5A6E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C17A74242375138F00D5A6E8 /* Budgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budgets.swift; sourceTree = "<group>"; };
+		C17A74262375150600D5A6E8 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		C1B17E642367C238001C3514 /* budget_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = budget_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B17E672367C238001C3514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B17E692367C238001C3514 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,9 +105,15 @@
 		C1B17E662367C238001C3514 /* budget_app */ = {
 			isa = PBXGroup;
 			children = (
+				C1D0BE5E236BE64A001D5ED0 /* View */,
+				C1D0BE5D236BE647001D5ED0 /* Controller */,
+				C1D0BE5C236BE639001D5ED0 /* Model */,
 				C1B17E672367C238001C3514 /* AppDelegate.swift */,
 				C1B17E692367C238001C3514 /* SceneDelegate.swift */,
 				C1B17E6B2367C238001C3514 /* ContentView.swift */,
+				C17A74222374980F00D5A6E8 /* HomeView.swift */,
+				C17A74242375138F00D5A6E8 /* Budgets.swift */,
+				C17A74262375150600D5A6E8 /* Categories.swift */,
 				C1B17E6D2367C239001C3514 /* Assets.xcassets */,
 				C1B17E722367C239001C3514 /* LaunchScreen.storyboard */,
 				C1B17E752367C239001C3514 /* Info.plist */,
@@ -134,6 +146,27 @@
 				C1B17E8B2367C23A001C3514 /* Info.plist */,
 			);
 			path = budget_appUITests;
+			sourceTree = "<group>";
+		};
+		C1D0BE5C236BE639001D5ED0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1D0BE5D236BE647001D5ED0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1D0BE5E236BE64A001D5ED0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B17E682367C238001C3514 /* AppDelegate.swift in Sources */,
+				C17A74252375138F00D5A6E8 /* Budgets.swift in Sources */,
+				C17A74232374980F00D5A6E8 /* HomeView.swift in Sources */,
 				C1B17E6A2367C238001C3514 /* SceneDelegate.swift in Sources */,
 				C1B17E6C2367C238001C3514 /* ContentView.swift in Sources */,
+				C17A74272375150700D5A6E8 /* Categories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"budget_app/Preview Content\"";
+				DEVELOPMENT_TEAM = 8JHTEMWCNB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = budget_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"budget_app/Preview Content\"";
+				DEVELOPMENT_TEAM = 8JHTEMWCNB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = budget_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
