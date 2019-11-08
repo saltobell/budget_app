@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88D8188623750D4100DC0606 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D8188523750D4100DC0606 /* Login.swift */; };
+		88D818882375150100DC0606 /* Savings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D818872375150100DC0606 /* Savings.swift */; };
 		C1B17E682367C238001C3514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B17E672367C238001C3514 /* AppDelegate.swift */; };
 		C1B17E6A2367C238001C3514 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B17E692367C238001C3514 /* SceneDelegate.swift */; };
 		C1B17E6C2367C238001C3514 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B17E6B2367C238001C3514 /* ContentView.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88D8188523750D4100DC0606 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		88D818872375150100DC0606 /* Savings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Savings.swift; sourceTree = "<group>"; };
 		C1B17E642367C238001C3514 /* budget_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = budget_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B17E672367C238001C3514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B17E692367C238001C3514 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				C1B17E722367C239001C3514 /* LaunchScreen.storyboard */,
 				C1B17E752367C239001C3514 /* Info.plist */,
 				C1B17E6F2367C239001C3514 /* Preview Content */,
+				88D8188523750D4100DC0606 /* Login.swift */,
+				88D818872375150100DC0606 /* Savings.swift */,
 			);
 			path = budget_app;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 				C1B17E682367C238001C3514 /* AppDelegate.swift in Sources */,
 				C1B17E6A2367C238001C3514 /* SceneDelegate.swift in Sources */,
 				C1B17E6C2367C238001C3514 /* ContentView.swift in Sources */,
+				88D818882375150100DC0606 /* Savings.swift in Sources */,
+				88D8188623750D4100DC0606 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
