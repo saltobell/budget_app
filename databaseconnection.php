@@ -10,7 +10,7 @@ if (mysqli_connect_errno())
 	echo "Failed to connect to MySQL: ".mysqli_connect_error();
 }
 
-$sql="SELECT * FROM Transactions";
+//$sql="SELECT * FROM Transactions";
 
 if($result = mysqli_query($con,$sql))
 {
