@@ -10,9 +10,13 @@ if (mysqli_connect_errno())
 	echo "Failed to connect to MySQL: ".mysqli_connect_error();
 }
 
-//$sql="SELECT * FROM Transactions";
+$sql="SELECT * FROM Transactions";
+$user = "SELECT * FROM Users";
+$account = "SELECT * FROM Account";
+$budget = "SELECT * FROM Budget";
+$category = "SELECT * FROM Category";
 
-if($result = mysqli_query($con,$sql))
+if($result = mysqli_query($con,$sql,$user,$account,$budget,$category))
 {
 	$resultArray = array();
 	$tempArray = array();
