@@ -39,7 +39,8 @@ class DbOperations
 		}
 		return $return;
 	}
-	public function createAccount($acc_name,$acc_type,$balance,$numOfAccts)
+	
+	public funciton createAccount($acc_name,$acc_type,$balance,$numOfAccts)
 	{
 		//is numofaccts user input?
 		$input = $this->conn->prepare("INSERT INTO Account(acc_name,acc_type,balance,numOfAccts_) values(?,?,?,?)");
@@ -124,6 +125,7 @@ class DbOperations
 		}
 	}
 	$conn->close();
+	}
 	?>
 
 	
