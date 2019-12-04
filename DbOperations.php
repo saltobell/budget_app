@@ -61,9 +61,9 @@ class DbOperations
 		}
 	}
 		
-	public function createTransaction($amount,$date,$_type,$method,$description)
+	public function createTransaction($amount,$day,$type_,$method,$description)
 	{
-		$input = $this->conn->prepare("INSERT INTO Transaction(amount,date,type_,method,description) values(?,?,?,?,?)");
+		$input = $this->conn->prepare("INSERT INTO Transaction(amount,day,type_,method,description) values(?,?,?,?,?)");
 		//$input->bind_param()//missing something
 		$result=$input->execute();
 		$input->close();
