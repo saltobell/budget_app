@@ -10,7 +10,7 @@ class DbOperations
 	}
 	
 	
-	public function createUser($First Name,$Last Name,$email,$password)
+	public function createUser($FirstName,$LastName,$email,$password)
 	{
 		$stmt = $this->conn->prepare("INSERT INTO user(First Name,Last Name,email,password) values(?,?,?)");
 		//$stmt->bind_param()
