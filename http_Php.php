@@ -4,7 +4,8 @@ $input = array(); //is one array enough?
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
 	$user_ID = $_POST['userID'];
-	$user_name = $_POST['name'];
+	$user_firstname = $_POST['First Name'];
+	$user_lastnaem = $_POST['Last Name'];
 	$user_email = $_POST['email'];
 	$user_password = $_POST['password'];
 	
