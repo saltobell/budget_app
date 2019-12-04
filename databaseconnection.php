@@ -12,11 +12,10 @@ if (mysqli_connect_errno())
 
 $sql="SELECT * FROM Transactions";
 $user = "SELECT * FROM Users";
-$account = "SELECT * FROM Account";
 $budget = "SELECT * FROM Budget";
 $category = "SELECT * FROM Category";
 
-if($result = mysqli_query($con,$sql,$user,$account,$budget,$category))
+if($result = mysqli_query($con,$sql,$user,$budget,$category))
 {
 	$resultArray = array();
 	$tempArray = array();
