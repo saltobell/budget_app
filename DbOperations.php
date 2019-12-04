@@ -10,9 +10,9 @@ class DbOperations
 	}
 	
 	
-	public function createUser($name,$email,$password)
+	public function createUser($First Name,$Last Name,$email,$password)
 	{
-		$stmt = $this->conn->prepare("INSERT INTO user(name,email,password) values(?,?,?)");
+		$stmt = $this->conn->prepare("INSERT INTO user(First Name,Last Name,email,password) values(?,?,?)");
 		//$stmt->bind_param()
 		$result=$stmt->execute();
 		$stmt->close();
@@ -23,6 +23,21 @@ class DbOperations
 		else{
 		return false;
 		}
+	}
+	public function forgotPassword($email)
+	{
+		$return = array();
+		$sql = "SELECT * FROM user WHERE email = "".$email."'";
+		$stmt = $this->conn->query($sql);
+		if($stmt != null && (mysqli_num_rows($result)>=1))
+		{
+			$row = $stmt->fetch_array(MYSQLI_ASSOC);
+			if(!empty($row))
+			{
+				$return = $row;
+			}
+		}
+		return $return;
 	}
 	public function createAccount($acc_name,$acc_type,$balance,$numOfAccts)
 	{
