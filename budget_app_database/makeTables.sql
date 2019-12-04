@@ -1,7 +1,7 @@
 DROP TABLE Transaction;
 DROP TABLE Category;
 DROP TABLE Budget;
-DROP TABLE Account;
+//DROP TABLE Account;
 DROP TABLE Users;
 
 CREATE TABLE Users(
@@ -11,7 +11,7 @@ CREATE TABLE Users(
 	password	VARCHAR(20)
 );
 
-CREATE TABLE Account(
+/*CREATE TABLE Account(
 	acc_ID		INTEGER,
 	userID		INTEGER REFERENCES Users(userID),
 	acc_name	VARCHAR(100),
@@ -19,11 +19,11 @@ CREATE TABLE Account(
 	balance		DECIMAL(8,2),
 	numOfAccts	INTEGER,
 	PRIMARY KEY(acc_ID, userID)
-);	
+);*/	
 
 CREATE TABLE Transaction(
 	transactionID	INTEGER,
-	acc_ID		INTEGER REFERENCES Account(acc_ID),
+	//acc_ID		INTEGER REFERENCES Account(acc_ID),
 	userID		INTEGER REFERENCES Users(userID),
 	budgetID	INTEGER REFERENCES Budget(budgetID),
 	amount		DECIMAL(8,2),
