@@ -5,7 +5,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
 	$user_ID = $_POST['userID'];
 	$user_firstname = $_POST['First Name'];
-	$user_lastnaem = $_POST['Last Name'];
+	$user_lastname = $_POST['Last Name'];
 	$user_email = $_POST['email'];
 	$user_password = $_POST['password'];
 	
@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	require_once '../includes/DbOperation.php'; //operation file
 	$db = new DbOperation();
 	
-	if($db->createUser($user_ID,$user_name,$user_email,$user_password)))
+	if($db->createUser($user_ID,$user_firstname,$user_lastname,$user_email,$user_password)))
 	{
 		$input['error']=false;
 		$input['message']='User Created';
