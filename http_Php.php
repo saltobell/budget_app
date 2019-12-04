@@ -9,13 +9,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	$user_email = $_POST['email'];
 	$user_password = $_POST['password'];
 	
-	$account_id = $_POST['acc_ID'];
-	$account_name = $_POST['acc_name'];
-	$account_type = $_POST['acc_type'];
-	$account_balance = $_POST['balance'];
-	$account_numOFAcc = $_POST['numOfAccts'];
-	$account_primkey = $_POST['acc_ID,userID]';
-	
 	$transaction_ID = $_POST['transactionID'];
 	$transaction_amount = $_POST['amount'];
 	$transaction_day = $_POST['day'];
@@ -53,16 +46,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 		$input['error']=true;
 		$input['message']='Could not add user';
 	}
-	if($db->createAccount($account_id,$account_name,$account_balance,$account_numOFAcc,$account_primkey,$account_type)
-	{
-		$input['error']=false;
-		$input['message']='Account Created';
-		
-	}
-	else
-	{
-		$input['error']=true;
-		$input['message']='Could not create account';
 	}
 	if($db->createTransaction($transaction_ID,$transaction_amount,$transaction_day,$transaction_description,$transaction_method,$transaction_type,$transaction_primarykey)
 	{
