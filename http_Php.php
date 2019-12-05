@@ -1,5 +1,9 @@
 <?php
-$input = array(); //is one array enough?
+$finalArray = array();
+$input1 = array();
+$input2 = array();
+$input3 = array();
+$input4 = array();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
@@ -37,56 +41,74 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	
 	if($db->createUser($user_ID,$user_firstname,$user_lastname,$user_email,$user_password)))
 	{
-		$input['error']=false;
-		$input['message']='User Created';
+		$input1['error']=false;
+		$input1['message']='User Created';
+		array_push($finalArray,$input1);
+		exit
 		
 	}
 	else
 	{
-		$input['error']=true;
-		$input['message']='Could not add user';
+		$input1['error']=true;
+		$input1['message']='Could not add user';
+		array_push($finalArray,$input1);
+		exit
 	}
 	}
 	if($db->createTransaction($transaction_ID,$transaction_amount,$transaction_day,$transaction_description,$transaction_method,$transaction_type,$transaction_primarykey)
 	{
-		$input['error']=false;
-		$input['message']='Transaction Created';
+		$input2['error']=false;
+		$input2['message']='Transaction Created';
+		array_push($finalArray,$input2);
+		exit
 		
 	}
 	else
 	{
-		$input['error']=true;
-		$input['message']='Could not create transaction';
+		$input2['error']=true;
+		$input2['message']='Could not create transaction';
+		array_push($finalArray,$input2);
+		exit
 	}
 	if($db->createBudget($,budget_amountsaved,$budget_amountspent,$budget_budgetid,$budget_month,$budget_primkey)
 	{
-		$input['error']=false;
-		$input['message']='Budget Created';
+		$input3['error']=false;
+		$input3['message']='Budget Created';
+		array_push($finalArray,$input3);
+		exit
 		
 	}
 	else
 	{
-		$input['error']=true;
-		$input['message']='Could not create budget';
+		$input3['error']=true;
+		$input3['message']='Could not create budget';
+		array_push($finalArray,$input3);
+		exit
 	}
 	if($db->createCategories($cate_entertainment,$cate_food,$cate_housing,$cate_school,$cate_transportation,$cate_utilities,$cate_other,$cate_primarykey)
 	{
-		$input['error']=false;
-		$input['message']='Category Created';
+		$input4['error']=false;
+		$input4['message']='Category Created';
+		array_push($finalArray,$input4);
+		exit
 		
 	}
 	else
 	{
-		$input['error']=true;
-		$input['message']='Could not create Category';
+		$input4['error']=true;
+		$input4['message']='Could not create Category';
+		array_push($finalArray,$input4);
+		exit
 	}
 }
 else 
 {
 	$input['error']=true;
 	$input['message']='You are not authorized';
+	array_push($finalArray,$input);
+	exit
 }
 
-echo json_encode($input);
+echo json_encode($finalArray);
 ?>
 	
