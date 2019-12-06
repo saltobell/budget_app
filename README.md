@@ -42,6 +42,7 @@ Each user is able to input various transactions.
 There exists a relationship between the Transaction entity and the Budget entity, since when a transaction occurs the different amount attributes in the Budget entity can be affected. 
 The type attribute in transaction refers to a deposit or withdrawal which will determine whether to update the amtSpent (amount to spend) or amtSave (amount to save) in Budget entity. The description attribute in transaction will determine which categoryAmt to update in Budget entity.
 There exists a one to one relationship between the User entity and Budget entity because each user only has one budget. The user will update/set his or her budget’s categories and amount to spend/save.
+Here is a link to find more information on how to add Firebase to iOS project: https://firebase.google.com/docs/ios/setup 
 
 
 
